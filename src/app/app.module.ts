@@ -3,14 +3,28 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
+import { AjoutComponent } from './ajout/ajout.component';
+import { ListComponent } from './list/list.component';
+import { HeaderComponent } from './header/header.component';
+import { HttpClientModule} from '@angular/common/http';
+import { NotFoundComponent } from './not-found/not-found.component'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AjoutComponent,
+    ListComponent,
+    HeaderComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
